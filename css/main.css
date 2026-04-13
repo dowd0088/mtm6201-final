@@ -1,0 +1,318 @@
+:root {
+  --bs-primary: #3f795e;
+  --bs-secondary: #f3ebdb;
+  --bs-success: #82a476;
+  --bs-danger: #d17b5f;
+  --bs-light: #faf8f2;
+  --bs-dark: #1e2c25;
+  --bs-body-bg: #f7f3ec;
+  --bs-body-color: #24302a;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+a {
+  transition: color .2s ease, transform .2s ease;
+}
+a:hover,
+a:focus-visible {
+  color: var(--bs-primary);
+}
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  background: var(--bs-dark);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  z-index: 100;
+}
+.skip-link:focus-visible {
+  top: 1rem;
+}
+.site-header {
+  background: transparent;
+}
+.navbar-custom {
+  background: #243119;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #fff;
+}
+.navbar-custom .nav-link.nav-button {
+  background: #B3C9B4;
+  color: #243119;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+}
+.navbar-custom .nav-link.nav-button:hover,
+.navbar-custom .nav-link.nav-button:focus {
+  background: #9cb79d;
+  color: #243119;
+}
+.order-now-btn {
+  background: #C9F2C7;
+  color: #243119;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+.navbar-custom .nav-link.order-now-btn {
+  color: #243119;
+}
+.navbar-custom .nav-link.order-now-btn:hover,
+.navbar-custom .nav-link.order-now-btn:focus {
+  color: #243119;
+}
+.view-menu-btn {
+  background: #96BE8C;
+  color: #fff;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255,255,255,0.35);
+}
+.navbar-custom .navbar-toggler-icon {
+  filter: invert(1);
+}
+.navbar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+}
+h1,
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+}
+.hero-banner {
+  position: relative;
+  min-height: 65vh;
+}
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(30,44,37,0.35), rgba(31,35,32,0.65));
+  z-index: 1;
+}
+.hero-img {
+  min-height: 65vh;
+  object-fit: cover;
+  object-position: center;
+}
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+.eyebrow {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.slogan {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+.hero-order-btn {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+.feature-card,
+.menu-card,
+.team-card {
+  border: none;
+  border-radius: 1.25rem;
+}
+.feature-card {
+  background: #fff;
+}
+.feature-icon {
+  font-size: 2rem;
+  color: var(--bs-primary);
+}
+.value-icon {
+  width: 3.25rem;
+  height: 3.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+.menu-card img,
+.team-card img {
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+.card-body h3 {
+  font-weight: 600;
+}
+.bg-soft {
+  background: #f6f2e8;
+}
+.page-banner {
+  background: linear-gradient(135deg, rgba(63,121,94,0.95), rgba(130,164,118,0.95));
+}
+.page-banner h1,
+.page-banner p {
+  color: #fff;
+}
+.btn-outline-secondary {
+  border-color: rgba(30,44,37,0.3);
+}
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  background: rgba(63,121,94,0.08);
+}
+.ratio img {
+  object-fit: cover;
+}
+.bg-footer {
+  background-color: #243119;
+}
+footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .hero-banner {
+    min-height: 75vh;
+  }
+  .hero-copy {
+    padding-top: 6rem;
+  }
+  .slogan {
+    font-size: 1.5rem;
+  }
+  .hero-order-btn {
+    top: 37%;
+    font-size: 1.1rem;
+    padding: 0.875rem 1.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .green1 {
+    position: relative;
+    top: 2rem;
+  }
+
+  .green2 {
+    position: relative;
+    top: 4rem;
+  }
+
+  .btn-outline-secondary {
+    padding: 0.75rem 1.5rem;
+    position: relative;
+    left: 7rem;
+  }
+
+    .eyebrow {
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .fw-bold {
+    position: relative;
+    bottom: 1rem;
+  }
+
+ .view-menu-btn{
+    position: relative;
+    top: 1.7rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1100px) {
+  .hero-banner {
+    min-height: 85vh;
+  }
+
+  .green1 {
+    position: relative;
+    top: 2rem;
+  }
+
+  .green2 {
+    position: relative;
+    top: 4rem;
+  }
+
+  #team-heading {
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .btn-outline-secondary {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .page-banner h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .text-success {
+    font-size: 2rem;
+  }
+  .slogan {
+    font-size: 3rem;
+  }
+  .hero-order-btn {
+    top: 39%;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+  }
+
+  .eyebrow {
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .fw-bold {
+    position: relative;
+    bottom: 2rem;
+  }
+
+ .view-menu-btn{
+    position: relative;
+    top: 1rem;
+  }
+}
