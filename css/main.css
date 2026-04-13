@@ -1,3 +1,5 @@
+/* Root Variables */
+
 :root {
   --bs-primary: #3f795e;
   --bs-secondary: #f3ebdb;
@@ -27,6 +29,8 @@ a:hover,
 a:focus-visible {
   color: var(--bs-primary);
 }
+
+/* Skip Link */
 .skip-link {
   position: absolute;
   top: -3rem;
@@ -40,6 +44,9 @@ a:focus-visible {
 .skip-link:focus-visible {
   top: 1rem;
 }
+
+/* Header and Nav */
+
 .site-header {
   background: transparent;
 }
@@ -94,6 +101,9 @@ a:focus-visible {
   font-size: 1.35rem;
   letter-spacing: 0.03em;
 }
+
+/* Main body  */
+
 h1,
 h2 {
   font-family: 'Cormorant Garamond', serif;
@@ -279,6 +289,8 @@ footer {
 
   .btn-outline-secondary {
     padding: 0.75rem 1.5rem;
+    position: relative;
+    left: 1rem;
   }
 
   .page-banner h1 {
